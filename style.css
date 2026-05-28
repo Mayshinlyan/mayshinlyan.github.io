@@ -141,6 +141,16 @@ nav {
     font-weight: 700;
     font-size: 1.25rem;
     color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nav-links {
@@ -241,6 +251,10 @@ nav {
     color: #0b57d0;
 }
 
+.upcoming-course-item:hover .item-content h3 {
+    color: inherit;
+}
+
 .item-image {
     flex-shrink: 0;
     width: 150px;
@@ -255,6 +269,16 @@ nav {
     height: 100%;
     object-fit: contain;
     transition: opacity 0.3s ease;
+}
+
+.item-image.full-stretch {
+    width: 200px;
+    height: 120px;
+    background-color: #e9eef6;
+}
+
+.item-image.full-stretch img {
+    object-fit: contain;
 }
 
 .list-item:hover .item-image img {
@@ -283,10 +307,7 @@ nav {
     border: 2px dashed #e9eef6;
     padding: 2rem;
     border-radius: 12px;
-    text-align: center;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .placeholder-item .item-content h3 {
@@ -296,6 +317,24 @@ nav {
 .placeholder-item .item-content p {
     font-style: italic;
     margin-bottom: 0;
+}
+
+.placeholder-divider {
+    border: 0;
+    height: 1px;
+    background: #e9eef6;
+    margin: 1.5rem 0;
+}
+
+.youtube-notice {
+    font-size: 0.9rem;
+    color: #444746;
+}
+
+.youtube-inline-link {
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 /* Featured Item (Latest Letter) */
